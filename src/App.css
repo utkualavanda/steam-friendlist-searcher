@@ -1,0 +1,41 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background: rgb(236, 235, 235);
+}
+
+button{
+  color:black;
+  background-color: cornflowerblue;
+  margin: 0px 10px;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  max-height: 150px;
+  border: 2px solid black;
+  position: relative;
+  margin: 10px;
+}
+
+.card img {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.card p:last-of-type {
+  margin: 3px;
+}

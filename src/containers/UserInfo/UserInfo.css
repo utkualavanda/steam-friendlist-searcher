@@ -1,0 +1,11 @@
+.offline{
+    color: red
+}
+
+.online{
+    color: green
+}
+
+a{
+    text-decoration: none;
+}
