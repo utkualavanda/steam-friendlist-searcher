@@ -8,7 +8,6 @@ import axios from 'axios';
 const steamKey = '**YOUR STEAM API KEY GOES HERE**';
 
 const App = () => {
-
   const [steamId, setSteamId] = useState('**YOUR STEAM ID GOES HERE**');
 
   const [friendListState, setFriendListState] = useState([]);
@@ -23,6 +22,7 @@ const App = () => {
 
   const changeSteamId = () => {
     setSteamId(newSteamId);
+    setFriendListState([]);
   }
 
   useEffect(() => {
@@ -69,11 +69,14 @@ const App = () => {
     )
   }
 
+  if(steamId.length != 17){
+    alert('The Steam ID you have entered is wrong. Please review it.')
+  }
+
   return (
     <div className="App">
-      <Input steamId={indicateSteamId}></Input>
-      <button type="button" onClick={changeSteamId}>Search</button>
-      {user}
+      <Input steamId={indicateSteamId} changeId={changeSteamId}></Input>
+      {steamId.length == 17 ? user : null}
       {friendListState.length != 1 ? <UserInfo friendListState={friendListState} steamKey={steamKey} /> : null}
     </div>
   );

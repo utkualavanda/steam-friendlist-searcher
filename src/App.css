@@ -8,22 +8,16 @@ td, th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
-  background: rgb(236, 235, 235);
-}
-
-button{
-  color:black;
-  background-color: cornflowerblue;
-  margin: 0px 10px;
-}
-
-button:hover {
-  background-color: lightblue;
+  background: #ecebeb;
 }
 
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 300px;
   max-height: 150px;
   border: 2px solid black;
@@ -39,3 +33,4 @@ button:hover {
 .card p:last-of-type {
   margin: 3px;
 }
+/*# sourceMappingURL=App.css.map */

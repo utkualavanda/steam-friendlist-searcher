@@ -1,5 +1,3 @@
-const Auxiliary = (props) => {
-    return props.children;
-}
+const Auxiliary = (props) => props.children;
 
 export default Auxiliary;
